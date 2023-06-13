@@ -1,0 +1,151 @@
+/* HomePage.css */
+
+/* Estilos del panel de hamburguesa */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 2;
+  }
+  
+  .hamburger.open {
+    transform: rotate(90deg);
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .line.active {
+    background-color: #f37726;
+  }
+  
+  /* Estilos del menú */
+  nav {
+    position: relative;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0099cc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-name {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    background-color: #f8e8f0; /* Color rosa claro */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .menu.open {
+    transform: translateX(0);
+  }
+  
+  .menu li {
+    padding: 15px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #000; /* Color de fuente negra */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: #f37726;
+  }
+  
+  /* Estilos del contenido */
+  .content {
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 80px;
+  }
+  
+  h1 {
+    color: #0099cc;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .buttons {
+    margin-top: 40px;
+  }
+  
+  .button {
+    margin-right: 30px; /* Aumenta la separación entre los botones */
+  }
+  
+  .btn-cta {
+    background-color: #f37726;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-info {
+    background-color: #f8e8f0; /* Color rosa claro */
+    border: 2px solid #f37726;
+    color: #f37726;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-info:hover {
+    background-color: #f37726;
+    color: #fff;
+  }
+  
